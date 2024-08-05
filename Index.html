@@ -1,0 +1,242 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+	<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+					--foreground: 20 14.3% 4.1%;
+					--card: 0 0% 100%;
+					--card-foreground: 20 14.3% 4.1%;
+					--popover: 0 0% 100%;
+					--popover-foreground: 20 14.3% 4.1%;
+					--primary: 47.9 95.8% 53.1%;
+					--primary-foreground: 26 83.3% 14.1%;
+					--secondary: 60 4.8% 95.9%;
+					--secondary-foreground: 24 9.8% 10%;
+					--muted: 60 4.8% 95.9%;
+					--muted-foreground: 25 5.3% 44.7%;
+					--accent: 60 4.8% 95.9%;
+					--accent-foreground: 24 9.8% 10%;
+					--destructive: 0 84.2% 60.2%;
+					--destructive-foreground: 60 9.1% 97.8%;
+					--border: 20 5.9% 90%;
+					--input: 20 5.9% 90%;
+					--ring: 20 14.3% 4.1%;
+					--radius: 0.95rem;
+									}
+									.dark {
+										--background: 20 14.3% 4.1%;
+					--foreground: 60 9.1% 97.8%;
+					--card: 20 14.3% 4.1%;
+					--card-foreground: 60 9.1% 97.8%;
+					--popover: 20 14.3% 4.1%;
+					--popover-foreground: 60 9.1% 97.8%;
+					--primary: 47.9 95.8% 53.1%;
+					--primary-foreground: 26 83.3% 14.1%;
+					--secondary: 12 6.5% 15.1%;
+					--secondary-foreground: 60 9.1% 97.8%;
+					--muted: 12 6.5% 15.1%;
+					--muted-foreground: 24 5.4% 63.9%;
+					--accent: 12 6.5% 15.1%;
+					--accent-foreground: 60 9.1% 97.8%;
+					--destructive: 0 62.8% 30.6%;
+					--destructive-foreground: 60 9.1% 97.8%;
+					--border: 12 6.5% 15.1%;
+					--input: 12 6.5% 15.1%;
+					--ring: 35.5 91.7% 32.9%;
+								}
+							}
+		</style>  
+	<title>Team Peter</title>
+	</head>
+  <body>
+    <div class="bg-background text-primary-foreground min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-4xl font-bold mb-4">Team Peter</h1>
+    <p class="text-lg mb-8">¡Bienvenidos Team ! puedes hacer click en tu nombre para ver tus marcas.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="./Atletas/Aisaak.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 1" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Aisaak</h2>
+        </a>
+        <a href="./Atletas/Christopher Arboleda.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 2" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Christopher Arboleda</h2>
+        </a>
+        <a href="./Atletas/Cristian.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 3" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Cristian</h2>
+        </a>
+		<a href="./Atletas/Danna.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Danna</h2>
+        </a>
+		<a href="./Atletas/Derek.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Derek</h2>
+		</a>
+		<a href="./Atletas/Elkin Plaza.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Elkin Plaza</h2>
+		</a>
+		<a href="./Atletas/Guillermo.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Guillermo</h2>
+		</a>
+		<a href="./Atletas/Harold.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Harold</h2>
+		</a>
+		<a href="./Atletas/Isaac.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Isaac</h2>
+		</a>
+		<a href="./Atletas/Ivanova.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Ivanova</h2>
+		</a>
+		<a href="./Atletas/Jean Carlos.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Jean Carlos</h2>
+		</a>
+		<a href="./Atletas/Jeremy Gomez.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Jeremy Gomez</h2>
+		</a>
+		<a href="./Atletas/Jeremy Miranda.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Jeremy Miranda</h2>
+		</a>
+		<a href="./Atletas/Jeremy Quiñonez.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Jeremy Quiñonez</h2>
+		</a>
+		<a href="./Atletas/Joan.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Joan</h2>
+		</a>
+		<a href="./Atletas/Joao.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Joao</h2>
+		</a>
+		<a href="./Atletas/Joel.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Joel</h2>
+		</a>
+		<a href="./Atletas/Joffre Piza.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Joffre Piza</h2>
+		</a>
+		<a href="./Atletas/Jogar.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Jogar</h2>
+		</a>
+		<a href="./Atletas/Juan Diego.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Juan Diego</h2>
+		</a>
+		<a href="./Atletas/Juan Manuel.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Juan Manuel</h2>
+		</a>
+		<a href="./Atletas/Katherine.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Katherine</h2>
+		</a>
+		<a href="./Atletas/Loreand.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Loreand</h2>
+		</a>
+		<a href="./Atletas/Mathias.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Mathias</h2>
+		</a>
+		<a href="./Atletas/Matthew Arroyo.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Matthew Arroyo</h2>
+		</a>
+		<a href="./Atletas/Melvin.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Melvin</h2>
+		</a>
+		<a href="./Atletas/Octavio.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Octavio</h2>
+		</a>
+		<a href="./Atletas/Oscar.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Oscar</h2>
+		</a>
+		<a href="./Atletas/Ruben.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Ruben</h2>
+		</a>
+		<a href="./Atletas/Thiago Mina.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Thiago Mina</h2>
+		</a>
+		<a href="./Atletas/Thiago Perlaza.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Thiago Perlaza</h2>
+		</a>
+		<a href="./Atletas/Thiago Sanchez.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Thiago Sanchez</h2>
+		</a>
+		<a href="./Atletas/Valeska.html" class="bg-card p-4 rounded-lg shadow-md flex flex-col items-center justify-center transition-transform transform hover:scale-105">
+            <img src="https://images.pexels.com/photos/332835/pexels-photo-332835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Atleta 4" class="w-24 h-24 rounded-full mb-2">
+            <h2 class="text-lg font-bold">Valeska</h2>
+		</a>
+
+    </div>
+</div>
+
+  </body>
+</html>
