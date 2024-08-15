@@ -105,10 +105,10 @@
     </header>
     <section class="mt-8">
       <h2 class="text-xl font-semibold">Marcas de Juan Manuel</h2>
+      <h3 class="text-xl font-semibold">800 Metros</h3>
       <table class="w-full mt-4 border-collapse">
         <thead>
           <tr class="bg-secondary text-secondary-foreground">
-            <th class="border border-border p-2">Prueba</th>
             <th class="border border-border p-2">Marca</th>
             <th class="border border-border p-2">Viento</th>
             <th class="border border-border p-2">Lugar</th>
@@ -120,8 +120,18 @@
         </thead>
         <tbody>
           <tr>
-          <td class="border border-border p-2">800 Metros Planos</td>
-          <td class="border border-border p-2">2:05.48</td>
+          <td class="border border-border p-2">1:59,90</td>
+          <td class="border border-border p-2"> </td>
+          <td class="border border-border p-2">1</td>
+          <td class="border border-border p-2">Selectivo Provincial U23 - U18</td>
+          <td class="border border-border p-2">Estadio Modelo</td>
+          <td class="border border-border p-2">Guayaquil</td>
+          <td class="border border-border p-2">12 Jul 2024</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+          <td class="border border-border p-2">2:05,48</td>
           <td class="border border-border p-2"> </td>
           <td class="border border-border p-2">3</td>
           <td class="border border-border p-2">Camp. Nacional Velocidad, Vallas y Relevos</td>
@@ -130,10 +140,25 @@
           <td class="border border-border p-2">17 Mar 2024</td>
           </tr>
         </tbody>
+      </table>
+    </section>
+    <section class="mt-8">
+      <h3 class="text-xl font-semibold">1.500 Metros Planos</h3>
+      <table class="w-full mt-4 border-collapse">
+        <thead>
+          <tr class="bg-secondary text-secondary-foreground">
+            <th class="border border-border p-2">Marca</th>
+            <th class="border border-border p-2">Viento</th>
+            <th class="border border-border p-2">Lugar</th>
+            <th class="border border-border p-2">Torneo</th>
+            <th class="border border-border p-2">Locación</th>
+            <th class="border border-border p-2">Ciudad</th>
+            <th class="border border-border p-2">Fecha</th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
-          <td class="border border-border p-2">1.500 Metros Planos</td>
-          <td class="border border-border p-2">4:37.35</td>
+          <td class="border border-border p-2">4:37,35</td>
           <td class="border border-border p-2"> </td>
           <td class="border border-border p-2">4</td>
           <td class="border border-border p-2">Camp. Nacional Velocidad, Vallas y Relevos</td>
@@ -146,45 +171,6 @@
     </section>
   </div>
 </div>
-
-<script type="text/javascript">
-  // JavaScript to clear table data on button click
-  const clearTableButton = document.getElementById('clearTableButton');
-  clearTableButton.addEventListener('click', () => {
-    const tableBody = document.querySelector('tbody');
-    tableBody.innerHTML = '';
-  });
-  // JavaScript to add new row to the table
-  const athleteForm = document.getElementById('athleteForm');
-  athleteForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const nombre = document.getElementById('nombre').value;
-    const prueba = document.getElementById('prueba').value;
-    const marca = document.getElementById('marca').value;
-    const viento = document.getElementById('viento').value;
-    const lugar = document.getElementById('lugar').value;
-    const torneo = document.getElementById('torneo').value;
-    const locacion = document.getElementById('locacion').value;
-    const ciudad = document.getElementById('ciudad').value;
-    const fecha = document.getElementById('fecha').value;
-    const tableBody = document.querySelector('tbody');
-    const newRow = document.createElement('tr');
-    newRow.innerHTML = `
-      <td class="border border-border p-2">${nombre}</td>
-      <td class="border border-border p-2">${prueba}</td>
-      <td class="border border-border p-2">${marca}</td>
-      <td class="border border-border p-2">${viento}</td>
-      <td class="border border-border p-2">${lugar}</td>
-      <td class="border border-border p-2">${torneo}</td>
-      <td class="border border-border p-2">${locacion}</td>
-      <td class="border border-border p-2">${ciudad}</td>
-      <td class="border border-border p-2">${fecha}</td>
-    `;
-    tableBody.appendChild(newRow);
-    athleteForm.reset();
-  });
-</script>
-
 
   </body>
 </html>
